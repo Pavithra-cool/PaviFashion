@@ -36,7 +36,7 @@ const Checkout = ({setOrder}) => {
             <h3 className='text-2xl font-semibold mb-4'>CHECKOUT</h3>
             <div className='flex flex-col md:flex-row lg:flex-row justify-between space-x-10 mt-8'>
                 <div className='md:w-2/3'>
-                    <div className='border p-2 mb-6'>
+                    <div className=' border border-gray-700/50 p-2 mb-6'>
                         <div className='flex items-center justify-between' onClick={()=>setBillingToggle(!billingToggle)}>
                             <h3 className='text-lg font-semibold mb-2'>Billing Information</h3>
                             {billingToggle?<FaAngleUp/>:<FaAngleDown/>}
@@ -44,15 +44,15 @@ const Checkout = ({setOrder}) => {
                         <div className={`space-y-4 ${billingToggle?"":"hidden"}`}>
                             <div>
                                 <label className='block text-gray-700' htmlFor="">Name</label>
-                                <input type="text" name='name' placeholder='Enter Name' className='w-full px-3 py-2 border' />
+                                <input type="text" name='name' placeholder='Enter Name' className='w-full px-3 py-2 border border-gray-700/50' />
                             </div>
                             <div>
                                 <label className='block text-gray-700' htmlFor="">Email</label>
-                                <input type="email" name='gmail' placeholder='Enter Email' className='w-full px-3 py-2 border' />
+                                <input type="email" name='gmail' placeholder='Enter Email' className='w-full px-3 py-2 border border-gray-700/50' />
                             </div>
                             <div>
                                 <label className='block text-gray-700' htmlFor="">Phone</label>
-                                <input type="text" name='phone' placeholder='Enter Phone' className='w-full px-3 py-2 border' />
+                                <input type="text" name='phone' placeholder='Enter Phone' className='w-full px-3 py-2 border border-gray-700/50' />
                             </div>
                         </div>
                     </div>
@@ -76,7 +76,7 @@ const Checkout = ({setOrder}) => {
                             </div>
                         </div>
                     </div>
-                    <div className='border p-2 mb-6'>
+                    <div className='border border-gray-700/50 p-2 mb-6'>
                         <div className='flex items-center justify-between' onClick={()=>setPaymentToggle(!paymentToggle)}>
                             <h3 className='text-lg font-semibold mb-2'>Payment Information</h3>
                             {paymentToggle?<FaAngleUp/>:<FaAngleDown/>}
@@ -116,7 +116,7 @@ const Checkout = ({setOrder}) => {
                         </div>
                     </div>
                 </div>
-                <div className='md:w-1/3 bg-white p-6 rounded-lg shadow-md border'>
+                <div className='md:w-1/3 bg-white p-6 rounded-lg shadow-md border border-gray-700/50'>
                         <h3 className='text-lg font-semibold mb-4'>Order Summery</h3>
                         <div className='space-y-4'>
                             {cart.products.map((product)=>(
@@ -134,7 +134,7 @@ const Checkout = ({setOrder}) => {
                                 </div>
                             ))}
                         </div>
-                        <div className='mt-4 border-t pt-4'>
+                        <div className='mt-4 border-t border-gray-700/50 pt-4'>
                             <div className='flex justify-between'>
                                 <span>Total Price :</span>
                                 <span className='font-semibold'>${cart.totalPrice.toFixed(2)}</span>
