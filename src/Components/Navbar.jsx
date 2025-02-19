@@ -37,7 +37,7 @@ const Navbar = () => {
                 <h1 className='text-lg font-bold'><Link to={"/"}>PAVI FASHION</Link> </h1>
                 <div className='relative flex-1 mx-4'>
                     <form onSubmit={handleSearch}>
-                        <input type="text" placeholder='Enter Product Here...' className='sm:text-sm w-full border border-gray-300/50 py-2 px-4' onChange={(e)=>setSearch(e.target.value)} />
+                        <input type="text" placeholder='Enter Product Here...' className='text-xs md:text-xl w-full border border-gray-300/50 py-2 px-4' onChange={(e)=>setSearch(e.target.value)} />
                         <FaSearch className='absolute top-3 right-3 text-red-500' ></FaSearch>
                     </form>
                 </div>
