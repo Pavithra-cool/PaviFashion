@@ -7,7 +7,7 @@ const Order = ({order}) => {
     <div className='container mx-auto py-8 px-4 md:px-16 lg:px-24'>
         <h2 className='text-2xl font-semibold mb-4'>Thank you for your order</h2>
         <p>your Order has been placed successfully you will receive an email</p>
-        <div className='mt-6 p-4 border border-gray-700/50 runded-lg bg-gray-100'>
+        <div className='mt-6 p-4 border border-gray-300/50 runded-lg bg-gray-100'>
             <h3 className='text-lg font-semibold mb-2'>Order Summary</h3>
             <p>Order Number : {order.orderNumber}</p>
             <div className='mt-4'>
