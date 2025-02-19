@@ -44,15 +44,15 @@ const Checkout = ({setOrder}) => {
                         <div className={`space-y-4 ${billingToggle?"":"hidden"}`}>
                             <div>
                                 <label className='block text-gray-700' htmlFor="">Name</label>
-                                <input type="text" name='name' placeholder='Enter Name' className='w-full px-3 py-2 border border-gray-700/50' />
+                                <input type="text" name='name' placeholder='Enter Name' className='w-full px-3 py-2 border border-gray-300/50' />
                             </div>
                             <div>
                                 <label className='block text-gray-700' htmlFor="">Email</label>
-                                <input type="email" name='gmail' placeholder='Enter Email' className='w-full px-3 py-2 border border-gray-700/50' />
+                                <input type="email" name='gmail' placeholder='Enter Email' className='w-full px-3 py-2 border border-gray-300/50' />
                             </div>
                             <div>
                                 <label className='block text-gray-700' htmlFor="">Phone</label>
-                                <input type="text" name='phone' placeholder='Enter Phone' className='w-full px-3 py-2 border border-gray-700/50' />
+                                <input type="text" name='phone' placeholder='Enter Phone' className='w-full px-3 py-2 border border-gray-300/50' />
                             </div>
                         </div>
                     </div>
@@ -64,15 +64,15 @@ const Checkout = ({setOrder}) => {
                         <div className={`space-y-4 ${shippingToggle?"":"hidden"}`}>
                             <div>
                                 <label className='block text-gray-700' htmlFor="">Address :</label>
-                                <input type="text" name='address' placeholder='Enter Door No' onChange={(e)=>setShippingInfo({...shippingInfo,address:e.target.value})} className='w-full px-3 py-2 border' />
+                                <input type="text" name='address' placeholder='Enter Door No' onChange={(e)=>setShippingInfo({...shippingInfo,address:e.target.value})} className='w-full px-3 py-2 border border-gray-300/50' />
                             </div>
                             <div>
                                 <label className='block text-gray-700' htmlFor="">City :</label>
-                                <input type="text" name='city' placeholder='Enter Street' onChange={(e)=>setShippingInfo({...shippingInfo,city:e.target.value})} className='w-full px-3 py-2 border' />
+                                <input type="text" name='city' placeholder='Enter Street' onChange={(e)=>setShippingInfo({...shippingInfo,city:e.target.value})} className='w-full px-3 py-2 border border-gray-300/50' />
                             </div>
                             <div>
                                 <label className='block text-gray-700' htmlFor="">Zip Code</label>
-                                <input type="text" name='zip' placeholder='Enter Zip Code' onChange={(e)=>setShippingInfo({...shippingInfo,zip:e.target.value})} className='w-full px-3 py-2 border' />
+                                <input type="text" name='zip' placeholder='Enter Zip Code' onChange={(e)=>setShippingInfo({...shippingInfo,zip:e.target.value})} className='w-full px-3 py-2 border border-gray-300/50' />
                             </div>
                         </div>
                     </div>
@@ -95,20 +95,20 @@ const Checkout = ({setOrder}) => {
                                     <h3 className='text-xl font-semibold mb-4'>Debit Card Information</h3>
                                     <div className='mb-4'>
                                         <label className='block text-gray-700 font-semibold mb-2' htmlFor="">Card Number</label>
-                                        <input placeholder='Enter Card Number' className='border p-2 w-full rounded' type="text" />
+                                        <input placeholder='Enter Card Number' className='border border-gray-300/50 p-2 w-full rounded' type="text" />
                                     </div>
                                     <div className='mb-4' >
                                         <label className='block text-gray-700 font-semibold mb-2'  htmlFor="">Card Holder Name</label>
-                                        <input type="text" placeholder='Enter Card Number' className='border p-2 w-full rounded' />
+                                        <input type="text" placeholder='Enter Card Number' className='border border-gray-300/50 p-2 w-full rounded' />
                                     </div>
                                     <div className='flex justify-between mb-4'>
                                         <div  classname="w-1/2 mr-2">
                                             <label className='block text-gray-700 font-semibold mb-2' htmlFor="">Expire Date</label>
-                                            <input placeholder='MM/YY' className='border p-2 w-full rounded' type="text" />
+                                            <input placeholder='MM/YY' className='border border-gray-300/50 p-2 w-full rounded' type="text" />
                                         </div>
                                         <div classname="w-1/2 mr-2">
                                             <label className='block text-gray-700 font-semibold mb-2' htmlFor="">CVV</label>
-                                            <input placeholder='MM/YY' className='border p-2 w-full rounded' type="text" />
+                                            <input placeholder='MM/YY' className='border border-gray-300/50 p-2 w-full rounded' type="text" />
                                         </div>
                                     </div>
                                 </div>
