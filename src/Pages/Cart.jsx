@@ -22,7 +22,7 @@ const Cart = () => {
             <h3 className='text-2xl font-semibold mb-4'>SHOPPING CART</h3>
             <div className='flex flex-col md:flex-row lg:flex-row justify-between space-x-10 mt-8'>
                 <div className='md:w-2/3'>
-                    <div className='flex justify-between border-b border-gray-300/50 items-center mb-4 text-xs font-bold'>
+                    <div className='flex justify-between border-b border-gray-700/50 items-center mb-4 text-xs font-bold'>
                         <p>products</p>
                         <div className='flex space-x-8'>
                             <p>Price</p>
