@@ -22,7 +22,7 @@ const Cart = () => {
             <h3 className='text-2xl font-semibold mb-4'>SHOPPING CART</h3>
             <div className='flex flex-col md:flex-row lg:flex-row justify-between space-x-10 mt-8'>
                 <div className='md:w-2/3'>
-                    <div className='flex justify-between border-b items-center mb-4 text-xs font-bold'>
+                    <div className='flex justify-between border-b border-gray-300/50 items-center mb-4 text-xs font-bold'>
                         <p>products</p>
                         <div className='flex space-x-8'>
                             <p>Price</p>
@@ -42,7 +42,7 @@ const Cart = () => {
                                 </div>
                                 <div className='flex space-x-12 items-center'>
                                     <p>{product.price}</p>
-                                    <div className='flex items-center justify-center border'>
+                                    <div className='flex items-center justify-center border border-gray-300/50'>
                                         <button className='text-xl font-bold px-1.5 border-r' onClick={()=> dispatch(decreaseQuantity(product.id))}>-</button>
                                         <p className='text-xl px-2'>{product.quantity}</p>
                                         <button className='text-xl px-1 border-l' onClick={()=> dispatch(increaseQuantity(product.id))}>+</button>
@@ -54,7 +54,7 @@ const Cart = () => {
                         ))}
                     </div>
                     </div>
-                    <div className='md:w-1/3 bg-white p-6 rounded-lg shadow-md border'>
+                    <div className='md:w-1/3 bg-white p-6 rounded-lg shadow-md border border-gray-300/50'>
                         <h3 className='text-sm font-semibold mb-5'>Cart Total</h3>
                         <div className='flex justify-between mb-5 border-b pb-1'>
                             <span className='text-sm'>Total Items :</span>
