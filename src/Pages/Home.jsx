@@ -35,8 +35,8 @@ const Home = () => {
                 <img className='h-full w-full ' src={banner1} alt="" />
                 <div className='absolute top-16 left-12'>
                     <p className='text-black-600 font-bold'>Code with <span className='text-red-600 '>Yourself</span></p>
-                    <h2 className='font-bold text-4xl mt-3'>Welcome to E-Shop</h2>
-                    <p className='text-xl font-bold  mt-3 '>Millions+ Products</p>
+                    <h2 className='font-bold text-xl md:text-2xl lg:text-4xl  mt-3'>Welcome to E-Shop</h2>
+                    <p className='text-sm md:text-xl lg:text-2xl font-bold  mt-3 '>Millions+ Products</p>
                     <button className='text-white bg-red-600 px-6 py-1.5 mt-3 hover:bg-red-400'>Shop Now</button>
                 </div>
             </div>
